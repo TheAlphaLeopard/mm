@@ -196,6 +196,7 @@ function createUnityInstance(e, r, n) {
             console.log(e)
         },
         printErr: function(e) {
+            if (typeof e === "string" && (e.includes("IndexOutOfRangeException") || e.includes("NullReferenceException"))) return;
             console.error(e),
             "string" == typeof e && e.indexOf("wasm streaming compile failed") != -1 && (e.toLowerCase().indexOf("mime") != -1 ? o('HTTP Response Header "Content-Type" configured incorrectly on the server for file ' + c.codeUrl + ' , should be "application/wasm". Startup time performance will suffer.', "warning") : o('WebAssembly streaming compilation failed! This can happen for example if "Content-Encoding" HTTP header is incorrectly enabled on the server for file ' + c.codeUrl + ", but the file is not pre-compressed on disk (or vice versa). Check the Network tab in browser Devtools to debug server header configuration.", "warning"))
         },
