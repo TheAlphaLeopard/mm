@@ -36,7 +36,7 @@
   </head>
   <body>
     <canvas id="unity-canvas" width=960 height=600></canvas>
-    <script src="https://cdn.jsdelivr.net/gh/TheAlphaLeopard/mm/Build/bogtruffled.loader.js"></script>
+    <script src="https://raw.githubusercontent.com/TheAlphaLeopard/mm/main/Build/bogtruffled.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         var meta = document.createElement('meta');
@@ -46,10 +46,10 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "https://cdn.jsdelivr.net/gh/TheAlphaLeopard/mm/Build/bogtruffled.data",
-        frameworkUrl: "https://cdn.jsdelivr.net/gh/TheAlphaLeopard/mm/Build/bogtruffled.framework.js",
-        codeUrl: "https://cdn.jsdelivr.net/gh/TheAlphaLeopard/mm/Build/bogtruffled.wasm",
-        streamingAssetsUrl: "https://cdn.jsdelivr.net/gh/TheAlphaLeopard/mm/StreamingAssets",
+        dataUrl: "https://raw.githubusercontent.com/TheAlphaLeopard/mm/main/Build/bogtruffled.data",
+        frameworkUrl: "https://raw.githubusercontent.com/TheAlphaLeopard/mm/main/Build/bogtruffled.framework.js",
+        codeUrl: "https://raw.githubusercontent.com/TheAlphaLeopard/mm/main/Build/bogtruffled.wasm",
+        streamingAssetsUrl: "https://raw.githubusercontent.com/TheAlphaLeopard/mm/main/StreamingAssets",
         companyName: "Orsoniks",
         productName: "MadnessMelee",
         productVersion: "0.01",
